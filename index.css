@@ -1,0 +1,14 @@
+body {
+  background-image: url(/imagens/pexels-victorino-2771080.jpg);
+}
+
+h1 {
+  position: absolute;
+  font-size: 5.5em;
+  color: #fff;
+  top: 32.5%;
+  left: 22.5%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
