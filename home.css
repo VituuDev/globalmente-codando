@@ -1,0 +1,29 @@
+body {
+  background-image: url(/imagens/pexels-victorino-2771080-blur.png) !important;
+  background-size: cover; /* Faz o fundo cobrir toda a tela */
+  background-repeat: no-repeat; /* Impede que a imagem se repita */
+  background-position: center top; /* Centraliza a imagem */
+  background-attachment: fixed; /* Mantém o fundo fixo ao rolar */
+  min-height: 100vh; /* Garante que o fundo pegue a tela toda */
+}
+
+.blur-overlay {
+  position: fixed;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  z-index: 0 !important;
+}
+
+.custom-nav {
+  width: 50%;
+}
+
+.card {
+  width: 280px;
+  height: 250px;
+}
+
+.card-body {
+  background-color: whitesmoke;
+}
