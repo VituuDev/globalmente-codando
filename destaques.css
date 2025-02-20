@@ -1,0 +1,12 @@
+body {
+  background-image: url(/imagens/pexels-victorino-2771080-blur.png) !important;
+  background-size: cover; /* Faz o fundo cobrir toda a tela */
+  background-repeat: no-repeat; /* Impede que a imagem se repita */
+  background-position: center top; /* Centraliza a imagem */
+  background-attachment: fixed; /* Mantém o fundo fixo ao rolar */
+  min-height: 100vh; /* Garante que o fundo pegue a tela toda */
+}
+
+.custom-nav {
+  width: 80%;
+}
