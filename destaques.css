@@ -35,7 +35,10 @@ h1 {
   width: 70%;
 }
 
-#c2 {
-  font-family: 'DM serif display' !important;
+h2 {
   font-size: 2em !important;
+}
+
+.card-body {
+  background-color: whitesmoke;
 }

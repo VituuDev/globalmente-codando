@@ -25,21 +25,30 @@
           <img src="imagens/icons8-natural-52.png" width="30" height="30" />
           <span> Belezas naturais</span>
         </button>
-        <button type="button" class="btn btn-white bg-white border-2 rounded-2">
+        <button
+          onclick="rolarAteTexto2()"
+          class="btn btn-white bg-white border-2 rounded-2"
+        >
           <img
             src="imagens/icons8-cultura-50.png"
             width="30"
             height="30"
           /><span> Cultura e arte</span>
         </button>
-        <button type="button" class="btn btn-white bg-white border-2 rounded-2">
+        <button
+          onclick="rolarAteTexto3()"
+          class="btn btn-white bg-white border-2 rounded-2"
+        >
           <img
             src="imagens/icons8-educação-50.png"
             width="30"
             height="30"
           /><span> Educação e conhecimento</span>
         </button>
-        <button type="button" class="btn btn-white bg-white border-2 rounded-2">
+        <button
+          onclick="abrirhome()"
+          class="btn btn-white bg-white border-2 rounded-2"
+        >
           <img
             src="imagens/icons8-estátua-de-cristo-o-redentor-64.png"
             width="30"
@@ -74,18 +83,36 @@
         }
       </script>
 
+      <script>
+        function abrirhome() {
+          window.location.href = "home.html"; // Abre na mesma aba
+        }
+      </script>
+
+      <script>
+        function rolarAteTexto2() {
+          document.getElementById("c2").scrollIntoView({ behavior: "smooth" });
+        }
+      </script>
+
+      <script>
+        function rolarAteTexto3() {
+          document.getElementById("c3").scrollIntoView({ behavior: "smooth" });
+        }
+      </script>
+
       <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <!-- Vídeo 1 -->
           <div class="carousel-item active">
-            <video class="d-block w-100" autoplay>
+            <video class="d-block w-100" controls autoplay>
               <source src="imagens/Cabeçalho.mp4" type="video/mp4" />
               Seu navegador não suporta a tag de vídeo.
             </video>
           </div>
           <!-- Vídeo 2 -->
           <div class="carousel-item">
-            <video class="d-block w-100" autoplay>
+            <video class="d-block w-100" controls autoplay>
               <source
                 src="imagens/10041593-hd_1920_1080_24fps.mp4"
                 type="video/mp4"
@@ -95,7 +122,7 @@
           </div>
           <!-- Vídeo 3 -->
           <div class="carousel-item">
-            <video class="d-block w-100" autoplay>
+            <video class="d-block w-100" controls autoplay>
               <source
                 src="imagens/7206024-hd_1920_1080_24fps.mp4"
                 type="video/mp4"
@@ -124,6 +151,174 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+      <div id="c2" class="container-xl mt-4">
+        <h2>Cultura e arte</h2>
+        <div class="card-group">
+          <div class="card">
+            <img
+              src="imagens/Galo da Madrugada - Foto Allan Torres_PCR.jpg"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Galo da madrugada</h5>
+              <p class="card-text">
+                É um tradicional bloco carnavalesco, considerado o maior do
+                mundo, que desfila durante o carnaval do Recife, saindo no
+                sábado de carnaval e marcando a abertura do mesmo. Desde o seu
+                desfile inaugural, o Galo, como também é conhecido, ganhou
+                enorme adesão de foliões desfile após desfile, e desde 1994,
+                passou a ser considerado o maior bloco de carnaval do mundo,
+                segundo o Guinness World Records. Todo ano, dezenas de trios
+                elétricos, arrastam os foliões da capital pernambucana.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="imagens/c6b11a66-e0e2-498f-95b1-640f1a0aa70a.jpg"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Desfile das campeães: Viradouro</h5>
+              <p class="card-text">
+                Um enorme símbolo do carnaval do Rio de Janeiro, escolas de
+                samba, desfiles no tradicional Sambódromo Marquês de Sapucaí.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="imagens/36fa05f6-e5e2-4fdd-b94e-8e7909c7ba74.jpg"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Banda/Bloco Oludum</h5>
+              <p class="card-text">
+                Maior Bloco da Bahia, a banda Oludum já marco histórico cultural
+                da cidade. Sendo um símbolo característico da região.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-xl mt-4">
+        <div class="card-group">
+          <div class="card">
+            <img src="imagens/Fogueira de São João.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Fogueira de São João</h5>
+              <p class="card-text">
+                A tradicional fogueira de São João simboliza o anúncio do
+                nascimento de João Batista, primo de Jesus Cristo e um dos
+                principais santos da igreja católica.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="imagens/Festa Junina _ Para que serve a quadrilha_.jpg"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Quadrilhas de São João</h5>
+              <p class="card-text">
+                Maior símbolo da arte do são joão, as tradicionais quadrilhas
+                caipiras e estilizadas, sendo um dos eventos capazes de gerar
+                bastante renda na época dos festejos juninos.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="imagens/ao-vivo-em-salvador.jpg" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Bandas musicais</h5>
+              <p class="card-text">
+                A época de São João com toda certeza, tem total predominância do
+                gênero musical forró, sendo assim, é indispensável a presença da
+                banda Calcinha preta, assim também como: Magnifícos, Matruz com
+                leite, limão com mel, a antiga aviões do forró, etc..
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br /><br /><br />
+      <h2 id="c3">Educação e conhecimento</h2>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="imagens/Passar em medicina na USP de Pinheiros.jpg"
+              class="d-block w-100"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Usp</h5>
+              <p>Prédio de Medicina Usp-Pinheiros.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="imagens/Foto Aérea da Unicamp (Foto_ Antoninho Perri _ Ascom _ Unicamp).jpg"
+              class="d-block w-100"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Unicamp</h5>
+              <p>Sede da Unicamp.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="imagens/UFRJ - Universidade Federal do Rio de Janeiro.jpg"
+              class="d-block w-100"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>UFRJ</h5>
+              <p>Prédio principal da UFRJ.</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
       <script>
         var myCarousel = document.getElementById("videoCarousel");
         var carouselItems = myCarousel.getElementsByClassName("carousel-item");
@@ -148,5 +343,9 @@
         }
       </script>
     </div>
+
+    <footer class="bg-white text-black text-center py-3 mt-3 w-100">
+      &copy; 2025 Brasil. | Todos os direitos reservados.
+    </footer>
   </body>
 </html>
