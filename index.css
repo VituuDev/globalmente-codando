@@ -2,6 +2,9 @@
 
 body {
   background-image: url(imagens/pexels-victorino-2771080.jpg);
+  background-size: cover; /* Faz o fundo cobrir toda a tela */
+  background-repeat: no-repeat; /* Impede que a imagem se repita */
+  background-position: center top; /* Centraliza a imagem */
 }
 
 h1 {

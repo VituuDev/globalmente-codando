@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Delicious+Handrawn&family=Oswald:wght@200..700&display=swap");
 body {
   background-image: url("imagens/pexels-victorino-2771080-blur.png") !important;
   background-size: cover; /* Faz o fundo cobrir toda a tela */
@@ -9,4 +10,32 @@ body {
 
 .custom-nav {
   width: 80%;
+}
+
+h1 {
+  position: absolute;
+  font-size: 5.5em !important;
+  color: #fff !important;
+  top: 32.5%;
+  left: 10%;
+  text-transform: uppercase !important;
+}
+
+.text-body-custom {
+  font-size: 0.5em;
+  color: #ffff00;
+  text-align: justify;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  font-family: "Oswald";
+}
+
+.btn-group {
+  width: 70%;
+}
+
+#c2 {
+  font-family: 'DM serif display' !important;
+  font-size: 2em !important;
 }

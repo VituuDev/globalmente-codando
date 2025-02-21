@@ -16,42 +16,137 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <div class="custom-nav mx-auto">
-      <nav class="nav nav-pills nav-fill d-flex gap-3">
-        <a
-          class="nav-link active px-3 mt-5 bg-white text-black rounded-2"
-          aria-current="page"
-          href="#"
-          ><img
-            src="imagens/icons8-globo-terrestre-50.png"
-            width="32"
-            height="32"
-          />
-          Geografia e natureza</a
+    <div class="d-flex justify-content-center">
+      <div class="btn-group gap-4 mt-5" role="group" aria-label="Basic example">
+        <button
+          onclick="rolarAteTexto1()"
+          class="btn btn-white bg-white border-2 rounded-2"
         >
-        <a
-          class="nav-link active px-3 mt-5 bg-white text-black rounded-2"
-          href="#"
-          ><img src="imagens/icons8-cultura-50.png" width="32" height="32" />
-          Cultura e tradições</a
-        >
-        <a
-          class="nav-link active px-3 mt-5 bg-white text-black rounded-2"
-          href="#"
-          ><img src="imagens/icons8-educação-50.png" width="32" height="32" />
-          Educação e conhecimento</a
-        >
-        <a
-          class="nav-link active px-3 mt-5 bg-white text-black rounded-2"
-          href="home.html"
-          ><img
+          <img src="imagens/icons8-natural-52.png" width="30" height="30" />
+          <span> Belezas naturais</span>
+        </button>
+        <button type="button" class="btn btn-white bg-white border-2 rounded-2">
+          <img
+            src="imagens/icons8-cultura-50.png"
+            width="30"
+            height="30"
+          /><span> Cultura e arte</span>
+        </button>
+        <button type="button" class="btn btn-white bg-white border-2 rounded-2">
+          <img
+            src="imagens/icons8-educação-50.png"
+            width="30"
+            height="30"
+          /><span> Educação e conhecimento</span>
+        </button>
+        <button type="button" class="btn btn-white bg-white border-2 rounded-2">
+          <img
             src="imagens/icons8-estátua-de-cristo-o-redentor-64.png"
-            width="32"
-            height="32"
-          />
-          Voltar</a
+            width="30"
+            height="30"
+          /><span> Voltar</span>
+        </button>
+      </div>
+    </div>
+    <div>
+      <h1
+        style="
+          text-align: center;
+          color: darkblue !important;
+          font-family: 'DM serif display';
+        "
+      >
+        Brasil <br />
+        <small class="text-body-custom"
+          ><em
+            >"Nós fizemos história para ficar na memória e nos acompanhar"
+          </em></small
         >
-      </nav>
+      </h1>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div class="container-xl">
+      <h2 id="c1">Belezas naturais</h2>
+
+      <script>
+        function rolarAteTexto1() {
+          document.getElementById("c1").scrollIntoView({ behavior: "smooth" });
+        }
+      </script>
+
+      <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Vídeo 1 -->
+          <div class="carousel-item active">
+            <video class="d-block w-100" autoplay>
+              <source src="imagens/Cabeçalho.mp4" type="video/mp4" />
+              Seu navegador não suporta a tag de vídeo.
+            </video>
+          </div>
+          <!-- Vídeo 2 -->
+          <div class="carousel-item">
+            <video class="d-block w-100" autoplay>
+              <source
+                src="imagens/10041593-hd_1920_1080_24fps.mp4"
+                type="video/mp4"
+              />
+              Seu navegador não suporta a tag de vídeo.
+            </video>
+          </div>
+          <!-- Vídeo 3 -->
+          <div class="carousel-item">
+            <video class="d-block w-100" autoplay>
+              <source
+                src="imagens/7206024-hd_1920_1080_24fps.mp4"
+                type="video/mp4"
+              />
+              Seu navegador não suporta a tag de vídeo.
+            </video>
+          </div>
+        </div>
+        <!-- Controles do Carousel -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#videoCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#videoCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <script>
+        var myCarousel = document.getElementById("videoCarousel");
+        var carouselItems = myCarousel.getElementsByClassName("carousel-item");
+
+        for (let i = 0; i < carouselItems.length; i++) {
+          var video = carouselItems[i].querySelector("video");
+          if (video) {
+            // Quando o vídeo termina, avança para o próximo item do carousel
+            video.onended = function () {
+              var nextCarouselItem = myCarousel.querySelector(
+                ".carousel-item-next, .carousel-item-prev"
+              );
+              if (!nextCarouselItem) {
+                var nextItem = carouselItems[(i + 1) % carouselItems.length];
+                var carouselInstance = new bootstrap.Carousel(myCarousel);
+                carouselInstance.to(
+                  Array.from(carouselItems).indexOf(nextItem)
+                );
+              }
+            };
+          }
+        }
+      </script>
     </div>
   </body>
 </html>
